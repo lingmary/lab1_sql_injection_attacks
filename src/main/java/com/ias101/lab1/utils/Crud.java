@@ -51,6 +51,7 @@ public class Crud {
      * @throws RuntimeException if there is an error searching the database
      */
     public static User searchByUsername(String username) {
+
         ResultSet rs = null;
         User user = null;
 
@@ -86,6 +87,7 @@ public class Crud {
             throw new RuntimeException("Error deleting user: " + username, e);
         }
     }
+
 
     /**
      * Extracts user data from a ResultSet and creates a User object.
